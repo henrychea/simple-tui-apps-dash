@@ -1,0 +1,19 @@
+[package]
+name = "appdash"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "Terminal dashboard for local apps: status, ports, CPU/RAM, start/stop/restart"
+license = "MIT"
+repository = "https://github.com/henrychea/simple-tui-apps-dash"
+readme = "README.md"
+
+[dependencies]
+crossterm = "0.28"
+libc = "0.2"
+ratatui = "0.29"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+
+[profile.release]
+strip = true
